@@ -1,0 +1,35 @@
+[
+    {
+        "test_name": "Login Page Title Check",
+        "description": "Verify the title of the login page.",
+        "steps": [
+            {
+                "action": "navigate",
+                "target": "login_page_url"
+            }
+        ],
+        "expected_result": "Login page title is visible."
+    },
+    {
+        "test_name": "Signup Page Title Check",
+        "description": "Verify the title of the signup page.",
+        "steps": [
+            {
+                "action": "navigate",
+                "target": "signup_page_url"
+            }
+        ],
+        "expected_result": "Signup page title is visible."
+    },
+    {
+        "test_name": "Homepage Element Visibility Check",
+        "description": "Verify visibility of key elements on the homepage.",
+        "steps": [
+            {
+                "action": "navigate",
+                "target": "homepage_url"
+            }
+        ],
+        "expected_result": "Search bar, category list, and promotional banners are visible."
+    }
+]
