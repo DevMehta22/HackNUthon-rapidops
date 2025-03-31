@@ -1,35 +1,46 @@
 [
     {
         "test_name": "Login Page Title Check",
-        "description": "Verify the title of the login page.",
+        "description": "Verify the title of the login page is visible.",
         "steps": [
             {
-                "action": "navigate",
-                "target": "login_page_url"
+                "action": "locate",
+                "element": "TEXT - Welcome back"
             }
         ],
-        "expected_result": "Login page title is visible."
+        "expected_result": "The 'Welcome back' text is displayed on the login page."
     },
     {
         "test_name": "Signup Page Title Check",
-        "description": "Verify the title of the signup page.",
+        "description": "Verify the title of the signup page is visible.",
         "steps": [
             {
-                "action": "navigate",
-                "target": "signup_page_url"
+                "action": "locate",
+                "element": "TEXT - Welcome. Start your journey now with our management system!"
             }
         ],
-        "expected_result": "Signup page title is visible."
+        "expected_result": "The 'Welcome. Start your journey now with our management system!' text is displayed on the signup page."
     },
     {
-        "test_name": "Homepage Element Visibility Check",
-        "description": "Verify visibility of key elements on the homepage.",
+        "test_name": "Home Page Title Check",
+        "description": "Verify the presence of the 'SMART WEARABLE.' text on the home page.",
         "steps": [
             {
-                "action": "navigate",
-                "target": "homepage_url"
+                "action": "locate",
+                "element": "TEXT - SMART WEARABLE."
             }
         ],
-        "expected_result": "Search bar, category list, and promotional banners are visible."
+        "expected_result": "The 'SMART WEARABLE.' text is displayed on the home page."
+    },
+    {
+        "test_name": "Search Bar Presence",
+        "description": "Verify the search bar is present on the home page.",
+        "steps": [
+            {
+                "action": "locate",
+                "element": "FRAME - Search"
+            }
+        ],
+        "expected_result": "The search bar is displayed on the home page."
     }
 ]
